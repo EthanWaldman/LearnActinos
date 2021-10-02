@@ -1,10 +1,12 @@
-name: learn-1
+name: learn-2
 on: [push]
 jobs:
-  check-bats-version:
+  SimpleSample:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - run: pwd
-      - run: ls -l
+        name: where am i
+      - run: ls -lart
+        name: what is here
 
