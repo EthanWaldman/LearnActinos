@@ -22,6 +22,7 @@ jobs:
           path: output.txt
   SecondHalf:
     runs-on: ubuntu-latest
+    needs: FirstHalf
     steps:
       - name: download sample artifact
         uses: actions/download-artifact@v2
