@@ -13,4 +13,6 @@ jobs:
         name: where am i
       - run: ls -lart
         name: what is here
+      - run: ./scripts/shell1.sh
+        name: run script
 
